@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/react", // @babel/react react 的相关编译转化.. jsx等
+    "@babel/env"  // '@babel/preset-env 预设根据当前浏览器来转换浏览器可兼容的js
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": "css" // `style: true` 会加载 less 文件
+      }
+    ],
+    ["@babel/plugin-transform-async-to-generator"],  // 支持await函数系必须
+    ["@babel/plugin-transform-runtime"],
+    ["@babel/plugin-proposal-class-properties"]  // 支持es6函数系写法
+  ]
+}
