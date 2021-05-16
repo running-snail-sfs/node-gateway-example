@@ -4,7 +4,6 @@ temp
 tmp
 Desktop.ini
 Thumbs.db
-*.lock
 *.bak
 *.log
 *.tmp
